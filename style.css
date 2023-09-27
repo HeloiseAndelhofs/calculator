@@ -1,0 +1,17 @@
+body{
+    background-color: burlywood;
+}
+#screen{
+    display: flex;
+    width: 35%;
+    height: 100px;
+    background-color: blueviolet;
+}
+#calculator{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 70px;
+    height: 65px;
+}
