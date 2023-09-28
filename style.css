@@ -1,17 +1,37 @@
 body{
-    background-color: burlywood;
+    background-color: rgb(57, 53, 85);
 }
+
 #screen{
     display: flex;
-    width: 35%;
+    width: 450px;
     height: 100px;
-    background-color: blueviolet;
+    background-color: rgb(99, 84, 184);
+    margin: auto;
+    margin-top: 100px;
 }
 #calculator{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 570px;
+    margin: auto;
+    margin-top: 10px;
 }
 button{
-    width: 70px;
-    height: 65px;
+    width: 112px;
+    height: 114px;
+    font-size: 150%;
+    border: none;
+}
+button:not(:hover){
+border: 3px solid rgb(57, 53, 85);
+background-color: rgb(185, 179, 179);
+transition-duration: 250ms;
+}
+button[value="="]{
+    background-color: rgb(56, 90, 56);
+}
+button[value="C"]{
+    background-color: rgb(158, 73, 73);
 }
