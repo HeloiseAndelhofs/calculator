@@ -4,13 +4,13 @@ const screen = document.getElementById("screen");
 
 
 calculatorValues.forEach(value => {
-    console.log(value.addEventListener("click", (event) => {
+        (value.addEventListener("click", (event) => {
         switch (event.target.value) {
-            case event.target.value === "=":
-                eval(screenCalcul)
+            case "=":
+                screen.textContent = eval(screen.textContent)
                 break;
-                case event.target.value === "C":
-                    jj.remove()
+                case "C":
+                    screen.textContent = "";
                     break;
                 default:
                     screen.textContent += event.target.value    
@@ -18,5 +18,4 @@ calculatorValues.forEach(value => {
         }
     } ));
 });
-
 
